@@ -1,0 +1,24 @@
+{
+    "name": "aekkakti/collect",
+    "description": "Module for working with auth user",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "aekkakti",
+            "email": "music.tomsk1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Collect\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
