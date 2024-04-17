@@ -3,13 +3,13 @@
 namespace Collect;
 
 class Collect {
-    private $user = [
+    private $users = [
         'admin' => 'admin',
         'user' => 'user'
     ];
 
     public function login($username, $password): bool {
-        if (isset($this->user[$username]) && $this->user[$username] === $password) {
+        if (isset($this->users[$username]) && $this->users[$username] === $password) {
             $_SESSION['user'] = $username;
             return true;
         }
